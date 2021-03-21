@@ -34,7 +34,7 @@ public class PriorityQueueTest {
 
     @Test
     public void NegativeCapacityTest(){
-        Exception exceptiom = assertThrows(IllegalArgumentException.class,() ->{new PriorityQueue(-1);});
+        assertThrows(IllegalArgumentException.class,() ->{new PriorityQueue(-1);});
     }
 
     @Test
